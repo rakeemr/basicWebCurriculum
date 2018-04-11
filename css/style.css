@@ -1,0 +1,268 @@
+.nav-item {
+    font-size: 20px;
+}
+
+#menu-toggle {
+    color: white;
+    margin-right: 1%;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: fixed;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: fixed;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+    #sidebar-wrapper {
+        width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: fixed;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: fixed;
+        margin-right: 0;
+    }
+}
+
+.media-body {
+    margin-left: 3%;
+}
+
+.dp {
+    transition: all 0.2s ease-in-out;
+}
+
+.dp:hover {
+    border: 2px solid #eee;
+}
+
+.img-circle {
+    width: 25vh;
+    height: 35vh;
+}
+
+.hr {
+    margin: 8px auto;
+}
+
+.tec-brand {
+    color: blue;
+}
+
+.tec-brand:hover {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.work-resume {
+    margin-top: 4%;
+}
+
+#table-col2 {
+    padding: 0 15px 0 30px;
+}
+
+.social-media {
+    display: inline-block;
+    margin-top: 170%;
+    margin-left: 14%;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.img-logo {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-left: 35%;
+}
+
+body {
+    margin: 30px 0px;
+}
+
+.progress {
+    position: relative;
+    height: 16px;
+    margin-top: 5%;
+}
+
+.progress>.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 0px 30px 0px 5px;
+    color: #FFF;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress>.progress-completed {
+    position: absolute;
+    right: 0px;
+    font-weight: 800;
+    color: #000;
+    padding: 0px 10px 1px;
+}
+
+.progress-type {
+    top: 1px;
+}
+
+.progress-completed {
+    font-size: 12px
+}
+
+.badge-pill {
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    border: solid;
+    font-size: 16px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    outline: 0;
+    padding: 10px;
+    width: 97%;
+    color: #dedede;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 3%;
+}
+
+.btn-send {
+    margin-top: 2%;
+}
+
+.fa-address-card,
+.fa-newspaper,
+.fa-tasks {
+    margin-left: 3%;
+}
+
+td {
+    font-size: 17px;
+}
+
+td>a {
+    color: blue;
+}
+
+td>a:hover {
+    text-decoration: none;
+    color: darkslategrey;
+}
